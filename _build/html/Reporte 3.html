@@ -605,69 +605,15 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_10664</span>\<span class="mf">3730051474.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">import</span> <span class="nn">random</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="kn">import</span> <span class="nn">math</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="kn">import</span> <span class="nn">sklearn</span>
 <span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">import</span> <span class="nn">networkx</span>
-<span class="ne">---&gt; </span><span class="mi">12</span> <span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">statsmodels.iolib.summary2</span> <span class="kn">import</span> <span class="n">summary_col</span>
 
-<span class="o">~</span>\<span class="n">anaconda3</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">api</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">    </span><span class="mi">116</span> <span class="kn">from</span> <span class="nn">.regression.mixed_linear_model</span> <span class="kn">import</span> <span class="n">MixedLM</span>
-<span class="g g-Whitespace">    </span><span class="mi">117</span> <span class="kn">from</span> <span class="nn">.regression.quantile_regression</span> <span class="kn">import</span> <span class="n">QuantReg</span>
-<span class="ne">--&gt; </span><span class="mi">118</span> <span class="kn">from</span> <span class="nn">.regression.recursive_ls</span> <span class="kn">import</span> <span class="n">RecursiveLS</span>
-<span class="g g-Whitespace">    </span><span class="mi">119</span> <span class="kn">from</span> <span class="nn">.robust.robust_linear_model</span> <span class="kn">import</span> <span class="n">RLM</span>
-<span class="g g-Whitespace">    </span><span class="mi">120</span> <span class="kn">from</span> <span class="nn">.stats</span> <span class="kn">import</span> <span class="n">api</span> <span class="k">as</span> <span class="n">stats</span>
-
-<span class="o">~</span>\<span class="n">anaconda3</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">regression</span>\<span class="n">recursive_ls</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> 
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="kn">from</span> <span class="nn">statsmodels.tools.data</span> <span class="kn">import</span> <span class="n">_is_using_pandas</span>
-<span class="ne">---&gt; </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">statsmodels.tsa.statespace.mlemodel</span> <span class="kn">import</span> <span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="n">MLEModel</span><span class="p">,</span> <span class="n">MLEResults</span><span class="p">,</span> <span class="n">MLEResultsWrapper</span><span class="p">,</span> <span class="n">PredictionResults</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="n">PredictionResultsWrapper</span><span class="p">)</span>
-
-<span class="o">~</span>\<span class="n">anaconda3</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">tsa</span>\<span class="n">statespace</span>\<span class="n">mlemodel</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">32</span> 
-<span class="g g-Whitespace">     </span><span class="mi">33</span> <span class="kn">from</span> <span class="nn">.news</span> <span class="kn">import</span> <span class="n">NewsResults</span>
-<span class="ne">---&gt; </span><span class="mi">34</span> <span class="kn">from</span> <span class="nn">.simulation_smoother</span> <span class="kn">import</span> <span class="n">SimulationSmoother</span>
-<span class="g g-Whitespace">     </span><span class="mi">35</span> <span class="kn">from</span> <span class="nn">.kalman_smoother</span> <span class="kn">import</span> <span class="n">SmootherResults</span>
-<span class="g g-Whitespace">     </span><span class="mi">36</span> <span class="kn">from</span> <span class="nn">.kalman_filter</span> <span class="kn">import</span> <span class="n">INVERT_UNIVARIATE</span><span class="p">,</span> <span class="n">SOLVE_LU</span><span class="p">,</span> <span class="n">MEMORY_CONSERVE</span>
-
-<span class="o">~</span>\<span class="n">anaconda3</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">tsa</span>\<span class="n">statespace</span>\<span class="n">simulation_smoother</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> 
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="ne">----&gt; </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">.kalman_smoother</span> <span class="kn">import</span> <span class="n">KalmanSmoother</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">.cfa_simulation_smoother</span> <span class="kn">import</span> <span class="n">CFASimulationSmoother</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">tools</span>
-
-<span class="o">~</span>\<span class="n">anaconda3</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">tsa</span>\<span class="n">statespace</span>\<span class="n">kalman_smoother</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">types</span> <span class="kn">import</span> <span class="n">SimpleNamespace</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> 
-<span class="ne">---&gt; </span><span class="mi">11</span> <span class="kn">from</span> <span class="nn">statsmodels.tsa.statespace.representation</span> <span class="kn">import</span> <span class="n">OptionWrapper</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="kn">from</span> <span class="nn">statsmodels.tsa.statespace.kalman_filter</span> <span class="kn">import</span> <span class="p">(</span><span class="n">KalmanFilter</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span>                                                       <span class="n">FilterResults</span><span class="p">)</span>
-
-<span class="o">~</span>\<span class="n">anaconda3</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">statsmodels</span>\<span class="n">tsa</span>\<span class="n">statespace</span>\<span class="n">representation</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> 
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="ne">----&gt; </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">.tools</span> <span class="kn">import</span> <span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="n">find_best_blas_type</span><span class="p">,</span> <span class="n">validate_matrix_shape</span><span class="p">,</span> <span class="n">validate_vector_shape</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="p">)</span>
-
-<span class="nn">~\anaconda3\lib\importlib\_bootstrap.py</span> in <span class="ni">_find_and_load</span><span class="nt">(name, import_)</span>
-
-<span class="nn">~\anaconda3\lib\importlib\_bootstrap.py</span> in <span class="ni">_find_and_load_unlocked</span><span class="nt">(name, import_)</span>
-
-<span class="nn">~\anaconda3\lib\importlib\_bootstrap.py</span> in <span class="ni">_load_unlocked</span><span class="nt">(spec)</span>
-
-<span class="nn">~\anaconda3\lib\importlib\_bootstrap_external.py</span> in <span class="ni">exec_module</span><span class="nt">(self, module)</span>
-
-<span class="nn">~\anaconda3\lib\importlib\_bootstrap_external.py</span> in <span class="ni">get_code</span><span class="nt">(self, fullname)</span>
-
-<span class="nn">~\anaconda3\lib\importlib\_bootstrap_external.py</span> in <span class="ni">get_data</span><span class="nt">(self, path)</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;sklearn&#39;
 </pre></div>
 </div>
 </div>
