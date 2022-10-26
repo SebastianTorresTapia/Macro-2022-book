@@ -4,10 +4,11 @@
 format: jb-book
 root: intro
 chapters:
-- file: Reporte 1
-- file: Reporte 2
-- file: Reporte 3
-- file: Reporte 4
-- file: Reporte 5
+- file: Modelo de Ingreso-Gasto Keynesiano
+- file: La curva IS
+- file: El mercado monetario y la curva LM
+- file: El modelo IS-LM
+- file: El modelo DA-OA
+
 
 
