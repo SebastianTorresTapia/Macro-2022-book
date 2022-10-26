@@ -133,7 +133,7 @@ from causalgraphicalmodels import CausalGraphicalModel
 # 
 # $$ r =\frac{1}{h}(C_0 + G_0 + I_0 + X_0) - \frac{1 - (b - m)(1 - t)}{h}Y $$
 
-# In[19]:
+# In[3]:
 
 
 Co, Io, Go, Xo, h, b, m, t, Y = symbols('Co Io Go Xo h b m t Y')
@@ -194,7 +194,7 @@ df_t #∆r/∆Y
 
 # - Demanda Agregada:
 
-# In[22]:
+# In[4]:
 
 
 # Parámetros
@@ -248,8 +248,7 @@ DA_G = DA_K(Co, Io, Go, Xo, h, r, b, m, t, Y)
 
 # - Curva IS
 
-# In[23]:
-
+# In[5]:
 
 
 # Parámetros
@@ -276,7 +275,7 @@ def r_IS(b, m, t, Co, Io, Go, Xo, h, Y):
 r = r_IS(b, m, t, Co, Io, Go, Xo, h, Y)
 
 
-# In[25]:
+# In[6]:
 
 
 # Gráfico de la derivación de la curva IS a partir de la igualdad (DA = Y)
@@ -381,7 +380,7 @@ plt.show()
 
 # Graficando la curva IS de equilibrio en el Mercado de Bienes:
 
-# In[4]:
+# In[7]:
 
 
 # Parámetros
@@ -433,7 +432,7 @@ plt.show()
 
 # ##### Pregunta 3: 
 
-# In[5]:
+# In[8]:
 
 
 z_size = 100          
@@ -441,7 +440,7 @@ z = np.arange(z_size)
 z 
 
 
-# In[6]:
+# In[9]:
 
 
 #Parameters
@@ -458,7 +457,7 @@ h =  5                  # constante de decisión a invertir
 Y = np.arange(Y_size)
 
 
-# In[7]:
+# In[10]:
 
 
 def r_IS(b, m, t, Co, Io, Go, Xo, h, Y):
@@ -466,7 +465,7 @@ def r_IS(b, m, t, Co, Io, Go, Xo, h, Y):
     return r_IS
 
 
-# In[8]:
+# In[11]:
 
 
 def Y_IS(b, m, t, Co, Io, Go, Xo, h, r):
@@ -474,7 +473,7 @@ def Y_IS(b, m, t, Co, Io, Go, Xo, h, r):
     return Y_IS
 
 
-# In[9]:
+# In[12]:
 
 
 r = r_IS(b, m, t, Co, Io, Go, Xo, h, Y)
@@ -483,7 +482,7 @@ r
 
 # $ Graficando: $
 
-# In[10]:
+# In[13]:
 
 
 y_max = np.max(r)
@@ -518,6 +517,7 @@ plt.axis(v)
 plt.show()
 
 
+
 # $ Entonces: $ 
 
 # Como se puede observar, todos los puntos de la curva IS corresponden a pares ordenados que equilibran el mercado de bienes, donde el punto "A" representa un par ordenado que equilibra el ahorro con la inversión (I=S). Por ende, los puntos fuera de dicha curva ("C" y "B") son de desequilibrio en el mercado de bienes. 
@@ -530,7 +530,7 @@ plt.show()
 
 # Creando la curva IS
 
-# In[11]:
+# In[14]:
 
 
 # Curva IS ORIGINAL
@@ -575,7 +575,7 @@ r_G = r_IS(b, m, t, Co, Io, Go, Xo, h, Y)
 
 # Análisis gráfico
 
-# In[12]:
+# In[15]:
 
 
 # Graph
@@ -610,7 +610,7 @@ plt.show()
 
 # Análisis gráfico:
 
-# In[13]:
+# In[16]:
 
 
 # ORIGINAL IS Curve
@@ -681,7 +681,7 @@ plt.show()
 
 # Análisis gráfico:
 
-# In[21]:
+# In[17]:
 
 
 # ORIGINAL IS Curve
@@ -748,6 +748,7 @@ ax.set(title = "Baja la propensión marginal a consumir $(b)$", xlabel= 'Y', yla
 ax.legend()
 
 plt.show()
+
 
 
 #  Análsis intuitivo:  

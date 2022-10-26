@@ -313,6 +313,7 @@ def DA_K(Co, Io, Go, Xo, h, r, b, m, t, Y):
 DA_IS_K = DA_K(Co, Io, Go, Xo, h, r, b, m, t, Y)
 
 
+
 # In[13]:
 
 
@@ -647,6 +648,7 @@ def DA_K(Co, Io, Go, Xo, h, r, b, m, t, g, Y):
 DA_IS_K = DA_K(Co, Io, Go, Xo, h, r, b, m, t, g, Y)
 
 
+
 # In[22]:
 
 
@@ -693,6 +695,7 @@ plt.text(2.5, -3, '$◝$', fontsize = 30, color = '#404040')
 
 ax.set(title="El ingreso de Equilibrio a CP", xlabel= r'Y', ylabel= r'DA')
 plt.show()
+
 
 
 #     b) 6.2
